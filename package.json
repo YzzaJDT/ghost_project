@@ -20,7 +20,7 @@
     "scroll": "^3.0.1"
   },
     "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
