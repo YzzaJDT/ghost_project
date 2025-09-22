@@ -5,9 +5,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Product from './components/Product';
 import Blog from './components/blog';
-import Newsletter from './components/Newsletter';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Aos from 'aos';
 import  "aos/dist/aos.css";
@@ -17,14 +16,13 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar /> 
+        <Navbar /> 
         <Home/>
-        {/* <About /> */}
-          <Services />  
-              {/* <Product /> */}
-              {/* <Blog /> */}
-                {/* <Newsletter/> */}
-                {/* <Footer/> */}
+        <Services />  
+        <Blog />
+        <About />
+        <Contact/>
+        <Footer/>
     </Router>
 
     </>

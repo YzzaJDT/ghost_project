@@ -1,22 +1,61 @@
 import React from 'react'
+import { Footer } from 'flowbite-react';
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsMicrosoftTeams, BsTwitter } from 'react-icons/bs';
+import logo from '../assets/icons/logo.png'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-const Newsletter = () => {
+const Contact = () => {
   return (
-    <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto bg-neutralSilver py-16'>
-        <div className='flex items-center justify-center lg:w-2/5 mx-auto'>
-            <div className='text-center'>
-                <h2 className='lg:text-5xl text-3xl text-neutral-800 font-semibold mb-6 lg:leading-snug '>
-                Pellentesque suscipit fringilla libero eu.</h2>
-                <div className='flex items-center justify-center gap-8'>
-                    <button className='btn-primary'>Get a Demo --{">"}</button>
-                </div>
+    <div className="lg:px-14 max-w-screen-4xl mx-auto bg-neutralSilver py-16" id="contact">
+      <div className="w-full" data-aos="fade-up">
+        <div className="grid md:grid-cols-2 gap-10">
+          
+          {/* Left section */}
+          <div>
+            <div className="space-y-4 mb-8 px-4">
+              <a href="" className="items-center">
+                <span className="text-lg font-bold text-blue-900">Rolling Hills Towing </span> <br />
+                <span className="text-sm font-semibold text-blue-950">
+                  Prepared to provide you with top-quality towing services
+                </span>
+              </a>
             </div>
-       </div>
+
+            <div className="  gap-8 px-4">
+              <div>
+                <Footer.Title title="Contact Info" />
+                <Footer.LinkGroup col>
+                  <Footer.Link href="#">Address: <span>123 Towing Street, Sample, NS</span></Footer.Link>
+                  <Footer.Link href="#">Phone:<span> (555) 123-4567</span></Footer.Link>
+                  <Footer.Link href="#">Email:<span> info@example.com</span></Footer.Link>
+                </Footer.LinkGroup>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Right section - Map */}
+          <div className="w-full h-96 md:h-[400px]">
+            <iframe
+              title="Google Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701348.4813930871!2d-82.70201912345678!3d28.538336999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77af8f11b6f7f%3A0x9d13e8b9d59a3f07!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1691111111111!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Newsletter
+export default Contact
+
 
 
 
