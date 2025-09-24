@@ -34,7 +34,7 @@ const reviews = [
   },
 ];
 
-const Reviews = () => {
+const Blog = () => {
   return (
     <div className="max-h-screen bg-gray-100 py-10 overflow-hidden relative" id="blog">
       {/* Top row - scroll left */}
@@ -131,4 +131,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews;
+export default Blog;
