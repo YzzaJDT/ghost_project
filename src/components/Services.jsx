@@ -7,6 +7,7 @@ import tire from "../assets/icons/tirechanges.png";
 import autoTrans from "../assets/icons/auto_trans.png";
 import junkcar from "../assets/icons/junkcar.png";
 import flatbed from "../assets/icons/flatbed.png";
+
 const Services = () => {
   useEffect(() => {
     Aos.init({
@@ -17,18 +18,21 @@ const Services = () => {
     });
   }, []);
 
-    const services = [
-      { id: 1, title: "Fuel/Gas Delivery", image: gas },
-      { id: 2, title: "Jump Starts", image: jumpstart },
-      { id: 3, title: "Tire Changes", image: tire },
-      { id: 4, title: "Auto Transport", image: autoTrans },
-      { id: 5, title: "Junk Car Removal", image: junkcar },
-      { id: 6, title: "Flatbed Towing", image: flatbed },
-        ];
+  const services = [
+    { id: 1, title: "Fuel/Gas Delivery", image: gas, description: "Out of gas? We provide fast and reliable fuel delivery straight to your location. Our team ensures you’re back on the road quickly without the stress or hassle." },
+    { id: 2, title: "Jump Starts", image: jumpstart, description: "Dead battery? We provide quick and reliable jump start assistance wherever you are. Our team will get your vehicle running again so you can get back on the road without worry." },
+    { id: 3, title: "Tire Changes", image: tire, description: "Flat tire? We offer fast and dependable tire change assistance at your location. Our team will get you back on the road safely and without the hassle." },
+    { id: 4, title: "Auto Transport", image: autoTrans, description: "Need your vehicle moved? We provide safe and reliable auto transport for personal, business, or relocation needs. Our team ensures secure handling and timely delivery for your peace of mind." },
+    { id: 5, title: "Junk Car Removal", image: junkcar, description: "Got an old or unwanted car? We offer fast and hassle-free junk car removal right from your location. Our team ensures quick pickup and proper disposal, giving you back your space." },
+    { id: 6, title: "Flatbed Towing", image: flatbed, description: "Need a safe way to transport your vehicle? We provide secure and reliable flatbed towing for cars, SUVs, and more. Our team ensures your vehicle is handled with care from start to finish." },
+  ];
 
   return (
-    <div className="min-h-screen items-center w-full p-4 mt-11 sm:p-6 lg:p-6 bg-cover bg-center bg-no-repeat bg-white" id="service">
-      
+    <div
+      className="min-h-screen items-center w-full p-4 mt-11 sm:p-6 lg:p-6 
+                 bg-cover bg-center bg-no-repeat bg-white"
+      id="service"
+    >
       <div className="text-center mt-4" data-aos="fade-up">
         <h1 className="text-5xl font-roboto font-semibold mb-2 ">
           We offer a variety of towing services
@@ -43,15 +47,35 @@ const Services = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="px-4 py-6 text-center rounded-lg shadow cursor-pointer 
-                       hover:-translate-y-3 hover:border-b-4 hover:border-indigo-700 
-                       transition-all duration-300 flex flex-col items-center bg-white h-full"
+            className="relative px-6 py-10 text-center rounded-lg shadow cursor-pointer
+                       hover:-translate-y-2 hover:border-b-4 hover:border-blue-800 
+                       transition-all duration-300 flex flex-col items-center bg-white h-full group overflow-hidden"
           >
-            <div className="flex justify-center items-center h-20 w-20 mb-4">
-              <img src={service.image} alt={service.title} className="h-full w-full object-contain font-extrabold " />
+            {/* Default content (icon + title) */}
+            <div className="z-10 flex flex-col items-center transition-all duration-500 group-hover:opacity-0">
+              <div className="flex justify-center items-center h-20 w-20 mb-4">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <h4 className="text-lg font-bold text-neutralDGray mb-2">{service.title}</h4>
             </div>
-            <h4 className="text-lg font-bold text-neutralDGray mb-2">{service.title}</h4>
-            <p className="text-sm text-neutralGrey">{service.description}</p>
+
+            {/* Overlay (appears on hover) */}
+            <div
+                className="absolute inset-0 flex flex-col items-center justify-center text-center
+                          bg-gradient-to-b from-black/90 via-black/70 to-black/90
+                          opacity-0 group-hover:opacity-90 transition-opacity duration-500">
+                <h4 className="text-white font-semibold font-roboto tracking-wider mb-3">
+                  {service.title}
+                </h4>
+                <h4 className="text-white text-sm font-light px-6">
+                  {service.description}
+                </h4>
+              </div>
+
           </div>
         ))}
       </div>
