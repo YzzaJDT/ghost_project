@@ -1,7 +1,12 @@
 import React, { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
+import gas from "../assets/icons/gas.png";
+import jumpstart from "../assets/icons/jumstart.png";
+import tire from "../assets/icons/tirechanges.png";
+import autoTrans from "../assets/icons/auto_trans.png";
+import junkcar from "../assets/icons/junkcar.png";
+import flatbed from "../assets/icons/flatbed.png";
 const Services = () => {
   useEffect(() => {
     Aos.init({
@@ -12,14 +17,14 @@ const Services = () => {
     });
   }, []);
 
-  const services = [
-    { id: 1, title: "Fuel/Gas Delivery", image: "/src/assets/icons/gas.png" },
-    { id: 2, title: "Jump Starts", image: "/src/assets/icons/jumstart.png" },
-    { id: 3, title: "Tire Changes", image: "/src/assets/icons/tirechanges.png" },
-    { id: 4, title: "Auto Transport", image: "/src/assets/icons/auto_trans.png" },
-    { id: 5, title: "Junk Car Removal", image: "/src/assets/icons/junkcar.png" },
-    { id: 6, title: "Flatbed Towing", image: "/src/assets/icons/flatbed.png" },
-  ];
+    const services = [
+      { id: 1, title: "Fuel/Gas Delivery", image: gas },
+      { id: 2, title: "Jump Starts", image: jumpstart },
+      { id: 3, title: "Tire Changes", image: tire },
+      { id: 4, title: "Auto Transport", image: autoTrans },
+      { id: 5, title: "Junk Car Removal", image: junkcar },
+      { id: 6, title: "Flatbed Towing", image: flatbed },
+        ];
 
   return (
     <div className="min-h-screen items-center w-full p-4 mt-11 sm:p-6 lg:p-6 bg-cover bg-center bg-no-repeat bg-white" id="service">
