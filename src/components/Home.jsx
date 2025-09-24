@@ -8,14 +8,14 @@ const Home = () => {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-start p-4 sm:p-6 lg:p-8 bg-cover bg-center bg-no-repeat" id='home'
+      className="min-h-screen flex items-center justify-start p-4 sm:p-6 lg:p-6 bg-cover bg-center bg-no-repeat" id='home'
       style={{ backgroundImage: `url(${banner1})` }}
     >
       {/* Parent container with vertical stacking */}
       <div className="flex flex-col space-y-6">
         
         {/* Service section */}
-        <div className="flex items-center">
+        <div className="flex items-center" data-aos="fade-up">
           <svg
             className="h-10 w-10 text-yellow-300 mr-4 flex-shrink-0"
             fill="none"
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
 
             {/* Location section */}
-        <div className="flex items-center">
+        <div className="flex items-center" data-aos="fade-up">
           <svg
             className="h-10 w-10 text-yellow-300  mr-4 flex-shrink-0"
             fill="none"

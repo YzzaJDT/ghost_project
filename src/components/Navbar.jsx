@@ -33,10 +33,10 @@ const Navbar = () => {
               className="h-12 w-auto object-contain"
             />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-black">
+              <span className="text-xl font-roboto font-bold text-black ">
                 ROLLING HILLS TOWING
               </span>
-              <span className="text-sm font-semibold text-black">
+              <span className="text-sm font-roboto font-semibold text-black">
                 Ready to assist you with the best towing business
               </span>
             </div>

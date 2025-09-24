@@ -17,44 +17,31 @@ const About = () => {
   return (
     <div>
         {/* { about text} */}
-        <div className=' lg:px-14 max-w-screen-2xl mx-auto py-10' id='about'>
+        <div className=' lg:px-14 max-w-screen-2xl mx-auto py-16' id='about'>
           <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12' data-aos="fade-up">
             <div className='md:w-2/5 mx-auto'>
               <img src={aboutImg} alt='' className='w-full max-w-sm h-auto rounded-lg'/>
-              <h1 className='text-center'>CEO NAME</h1>
+                  <h2 className='text-xl text-neutralDGray font-roboto font-semibold md-4 md:w-4/5 text-center mt-4'>
+                  Ralph McKenzie</h2>
             </div>
             <div className='md:w-4/5 mx-auto'>
-              <h2 className='text-4xl text-neutralDGray font-semibold md-4 md:w-4/5 text-center mb-8'>
+              <h2 className='text-4xl text-neutralDGray font-roboto font-semibold md-4 md:w-4/5 text-center mb-8'>
               ROLLING HILLS TOWING</h2>
-              <p className='md:w-4/4 text-sm text-neutralGrey mb-8 px-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className='md:w-4/4 text-sm text-neutralGrey mb-8 px-4'>At Rolling Hills Towing, our mission is simple: to provide fast, reliable, and affordable towing services to people in need — and to never leave anyone stranded on the road.
+For over 6 years, we’ve been serving drivers across Central Florida with a commitment to safety, professionalism, and care. <br/> <br/> What started as a small local operation has grown into a trusted towing company that assists with both residential and commercial auto towing services, always putting people first.
+Our vision is to become one of the most dependable towing providers throughout Central Florida and beyond, ensuring that every driver has someone they can call anytime, anywhere. <br/><br/>
+
+At Rolling Hills Towing, we understand that breakdowns and accidents are stressful. That’s why our professional team responds quickly, treats every customer with respect, and makes sure your vehicle is handled with care.
+When you call us, you’re not just getting a tow — you’re gaining a reliable partner who’s here to keep you moving. <br/><br/>
+📞 Need help now? Call Rolling Hills Towing today and let us get you back on the road.</p>
            
             </div>
+
+
+           
           </div>
         </div>
-        <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8' id='about'>
-          <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12' data-aos="fade-up">
-          <div className='md:w-3/5 mx-auto' data-aos="fade-right">
-              <h2 className='text-4xl text-neutralDGray text-center font-semibold md-4 md:w-4/5'>
-             Vision</h2>
-              <p className='md:w-3/4 text-sm text-neutralGrey mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-
-          </div>
-
-          <div className='md:w-3/5 mx-auto' data-aos="fade-left">
-              <h2 className='text-4xl text-neutralDGray text-center font-semibold md-4 md:w-4/5'>
-              Mission</h2>
-              <p className='md:w-3/4 text-sm text-neutralGrey mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          </div>
-        </div>
+      
     </div>
   )
 }
