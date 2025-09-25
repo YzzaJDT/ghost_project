@@ -29,12 +29,15 @@ const Services = () => {
 
   return (
     <div
-      className="min-h-screen items-center w-full p-4 mt-11 sm:p-6 lg:p-6 
+      className="min-h-screen items-center w-full p-2 mt-11 sm:p-6 lg:p-4 
                  bg-cover bg-center bg-no-repeat bg-white"
       id="service"
     >
       <div className="text-center mt-4" data-aos="fade-up" data-aos-duration="350">
-        <h1 className="text-5xl font-roboto font-semibold mb-2 ">
+       <div className='flex justify-center mb-4'>
+         <h1 className='bg-yellow-100 border-2 border-yellow-200 rounded-3xl p-2 px-4 font-medium'>Why Choose Us</h1>
+       </div>
+        <h1 className="text-5xl font-roboto font-bold mb-2 uppercase">
           We offer a variety of towing services
         </h1>
         <p className="text-neutralGrey font-roboto text-lg">
@@ -43,7 +46,7 @@ const Services = () => {
       </div>
 
       {/* cards */}
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-10">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-10">
         {services.map((service) => (
           <div
             key={service.id}
