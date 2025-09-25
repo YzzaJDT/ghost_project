@@ -9,7 +9,7 @@ import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
-    <div className="lg:px-14 rounded-3xl max-w-screen-3xl mx-auto bg-neutralSilver py-16" id="contact">
+    <div className="lg:px-14 rounded-3xl max-w-screen-3xl mx-auto bg-[#F9DC5C] py-16" id="contact">
       <div className="w-full" data-aos="fade-up">
         <div className="grid md:grid-cols-2 gap-10">
           
@@ -17,29 +17,29 @@ const Contact = () => {
           <div>
             <div className="space-y-4 mb-8 px-4">
               <a href="" className="items-center">
-                <span className="text-lg font-bold text-blue-900">Rolling Hills Towing </span> <br />
-                <span className="text-sm font-semibold text-blue-950">
-                  Prepared to provide you with top-quality towing services
+                <span className="text-lg font-bold text-gray-800">Rolling Hills Towing </span> <br />
+                <span className="text-sm font-semibold text-gray-800">
+                 Have questions or need immediate assistance? Reach out anytime we’re ready to help get you back on the road, safely and affordably.
                 </span>
               </a>
             </div>
 
             <div className="gap-8 px-4">
               <div>
-                <Footer.Title title="Contact Info" />
+                <Footer.Title title="Contact Info"  className='font-semibold text-gray-800'/>
                 <Footer.LinkGroup col>
-                  <Footer.Link href="#">Address: <span>29317 CR 561 Tavares, Fl 32778</span></Footer.Link>
-                  <Footer.Link href="#">Phone:<span> 352-456-8294</span></Footer.Link>
-                  <Footer.Link href="#">Outlook:<span> rollinghillstowing@outlook.com</span></Footer.Link>
+                  <Footer.Link href="#" className='text-gray-800'>Address: <span>29317 CR 561 Tavares, Fl 32778</span></Footer.Link>
+                  <Footer.Link href="#" className='text-gray-800'>Phone:<span> 352-456-8294</span></Footer.Link>
+                  <Footer.Link href="#" className='text-gray-800'>Outlook:<span> rollinghillstowing@outlook.com</span></Footer.Link>
                 </Footer.LinkGroup>
               </div>
 
             </div>
             
               {/* Social Icons */}
-                        <div className="flex gap-6 mt-10 pl-4 text-2xl text-neutralGrey">
+                        <div className="flex gap-6 mt-10 pl-4 text-2xl text-gray-800">
                          
-                          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+                          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 ">
                             <FaFacebook />
                           </a>
                           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
