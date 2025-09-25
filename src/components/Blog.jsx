@@ -36,7 +36,7 @@ const reviews = [
 
 const Blog = () => {
   return (
-    <div className="max-h-screen bg-gray-100 py-10 overflow-hidden relative" id="blog">
+    <div className="max-h-screen bg-gray-100 py-10 overflow-hidden relative rounded-3xl" id="blog">
       {/* Top row - scroll left */}
         <div className="ml-16 mb-5 mt-5">
           <h1 className="font-roboto font-bold text-xl">Blog</h1>
