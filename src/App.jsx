@@ -8,6 +8,7 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import  "aos/dist/aos.css";
+import Feedback from './components/Feedback';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Blog />
         <About />
         <Contact/>
+        <Feedback/>
         <Footer/>
     </Router>
 </div>

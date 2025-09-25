@@ -1,4 +1,4 @@
-import banner1 from '../assets/icons/background1.jpg'
+import banner1 from '../assets/icons/bg3.png'
 import Navbar from './Navbar'
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
 <div className='flex flex-row min-h-screen pt-24 pb-4'>  
   <Navbar/>
     <div
-      className="relative rounded-3xl flex flex-1 items-center sm:p-6 lg:p-6 bg-cover bg-center "
+      className="relative rounded-4xl flex flex-1 items-center sm:p-6 lg:p-6 bg-cover bg-center "
       id="home"
       style={{ backgroundImage: `url(${banner1})` }}
     >

@@ -41,7 +41,7 @@ Our vision is to become one of the most dependable towing providers throughout C
 
 At Rolling Hills Towing, we understand that breakdowns and accidents are stressful. That’s why our professional team responds quickly, treats every customer with respect, and makes sure your vehicle is handled with care.
 When you call us, you’re not just getting a tow — you’re gaining a reliable partner who’s here to keep you moving. <br/><br/>
-📞 Need help now? Call Rolling Hills Towing today and let us get you back on the road.</p>
+📞Call Rolling Hills Towing today and let us get you back on the road.</p>
            
             </div>
 
