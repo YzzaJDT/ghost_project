@@ -22,8 +22,8 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="w-full fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <nav className="py-4 lg:px-14 px-14">
+    
+      <nav className="py-4 lg:px-14 px-14 fixed top-0 left-0 right-0 bg-white shadow-md z-50" >
         <div className="flex justify-between items-center text-base">
           {/* Logo + Company Name */}
           <a href="/" className="flex items-center space-x-4">
@@ -33,10 +33,10 @@ const Navbar = () => {
               className="h-12 w-auto object-contain"
             />
             <div className="flex flex-col">
-              <span className="text-xl font-roboto font-bold text-black ">
+              <span className="text-lg font-roboto font-bold text-black ">
                 ROLLING HILLS TOWING
               </span>
-              <span className="text-sm font-roboto font-semibold text-black">
+              <span className="text-xs font-roboto font-semibold text-black italic">
                 Ready to assist you with the best towing business
               </span>
             </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
           ))}
         </div>
       </nav>
-    </header>
+    
   );
 };
 

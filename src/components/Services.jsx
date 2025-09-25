@@ -29,12 +29,15 @@ const Services = () => {
 
   return (
     <div
-      className="min-h-screen items-center w-full p-4 mt-11 sm:p-6 lg:p-6 
+      className="min-h-screen items-center w-full p-2 mt-11 sm:p-6 lg:p-4 
                  bg-cover bg-center bg-no-repeat bg-white"
       id="service"
     >
-      <div className="text-center mt-4" data-aos="fade-up">
-        <h1 className="text-5xl font-roboto font-semibold mb-2 ">
+      <div className="text-center mt-4" data-aos="fade-up" data-aos-duration="350">
+       <div className='flex justify-center mb-4'>
+         <h1 className='bg-yellow-100 border-2 border-yellow-200 rounded-3xl p-2 px-4 font-medium'>Why Choose Us</h1>
+       </div>
+        <h1 className="text-5xl font-roboto font-bold mb-2 uppercase">
           We offer a variety of towing services
         </h1>
         <p className="text-neutralGrey font-roboto text-lg">
@@ -43,12 +46,12 @@ const Services = () => {
       </div>
 
       {/* cards */}
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-10">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-10">
         {services.map((service) => (
           <div
             key={service.id}
             className="relative px-6 py-10 text-center rounded-lg shadow cursor-pointer
-                       hover:-translate-y-2 hover:border-b-4 hover:border-blue-800 
+                       hover:-translate-y-2 hover:border-b-4 hover:border-yellow-400
                        transition-all duration-300 flex flex-col items-center bg-white h-full group overflow-hidden"
           >
             {/* Default content (icon + title) */}
@@ -66,12 +69,12 @@ const Services = () => {
             {/* Overlay (appears on hover) */}
             <div
                 className="absolute inset-0 flex flex-col items-center justify-center text-center
-                          bg-gradient-to-b from-black/90 via-black/70 to-black/90
+                          bg-yellow-200 bg-opacity-70
                           opacity-0 group-hover:opacity-90 transition-opacity duration-500">
-                <h4 className="text-white font-semibold font-roboto tracking-wider mb-3">
+                <h4 className="text-black font-extrabold font-roboto tracking-wider mb-3">
                   {service.title}
                 </h4>
-                <h4 className="text-white text-sm font-light px-6">
+                <h4 className="text-black text-sm px-6 font-normal">
                   {service.description}
                 </h4>
               </div>

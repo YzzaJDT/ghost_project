@@ -1,15 +1,17 @@
-import React from 'react'
-import banner1 from '../assets/icons/bg2.jpg'
+import banner1 from '../assets/icons/background1.jpg'
+import Navbar from './Navbar'
 
 const Home = () => {
   return (
+<div className='flex flex-row min-h-screen pt-24 pb-4'>  
+  <Navbar/>
     <div
-      className="relative min-h-screen flex items-center justify-start p-4 sm:p-6 lg:p-6 bg-cover bg-center bg-no-repeat"
+      className="relative rounded-3xl flex flex-1 items-center sm:p-6 lg:p-6 bg-cover bg-center "
       id="home"
       style={{ backgroundImage: `url(${banner1})` }}
     >
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+      <div className="absolute inset-0 rounded-3xl bg-black opacity-60" ></div>
 
       {/* Parent container with vertical stacking */}
       <div className="relative flex flex-col space-y-6 z-10">
@@ -79,7 +81,9 @@ const Home = () => {
 
       </div>
     </div>
+    </div>   
   )
+  
 }
 
 export default Home

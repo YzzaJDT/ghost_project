@@ -9,7 +9,7 @@ import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
-    <div className="lg:px-14 max-w-screen-3xl mx-auto bg-neutralSilver py-16" id="contact">
+    <div className="lg:px-14 rounded-3xl max-w-screen-3xl mx-auto bg-neutralSilver py-16" id="contact">
       <div className="w-full" data-aos="fade-up">
         <div className="grid md:grid-cols-2 gap-10">
           
