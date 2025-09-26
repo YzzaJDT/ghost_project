@@ -28,9 +28,9 @@ const Contact = () => {
               <div>
                 <Footer.Title title="Contact Info"  className='font-semibold text-gray-800'/>
                 <Footer.LinkGroup col>
-                  <Footer.Link href="#" className='text-gray-800'>Address: <span>29317 CR 561 Tavares, Fl 32778</span></Footer.Link>
-                  <Footer.Link href="#" className='text-gray-800'>Phone:<span> 352-456-8294</span></Footer.Link>
-                  <Footer.Link href="#" className='text-gray-800'>Outlook:<span> rollinghillstowing@outlook.com</span></Footer.Link>
+                  <Footer.Link href="#" className='text-gray-800'> <span className='font-bold '>Address:</span> <span>29317 CR 561 Tavares, Fl 32778</span></Footer.Link>
+                  <Footer.Link href="#" className='text-gray-800'> <span className='font-bold '>Phone:</span><span> 352-456-8294</span></Footer.Link>
+                  <Footer.Link href="#" className='text-gray-800'> <span className='font-bold '>Outlook:</span><span> rollinghillstowing@outlook.com</span></Footer.Link>
                 </Footer.LinkGroup>
               </div>
 
