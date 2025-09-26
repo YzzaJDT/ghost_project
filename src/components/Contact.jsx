@@ -18,9 +18,9 @@ const Contact = () => {
             <div className="space-y-4 mb-8 px-4">
               <a href="" className="items-center">
                 <span className="text-lg font-bold text-gray-800">Rolling Hills Towing </span> <br />
-                <span className="text-sm font-semibold text-gray-800">
-                 Have questions or need immediate assistance? Reach out anytime we’re ready to help get you back on the road, safely and affordably.
-                </span>
+                <p className="text-sm font-semibold text-gray-800 text-justify">
+                 Have questions or need immediate assistance?  Reach out anytime we’re ready to help get you back on the road, safely and affordably.
+                </p>
               </a>
             </div>
 
