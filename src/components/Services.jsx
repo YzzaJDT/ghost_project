@@ -46,7 +46,7 @@ const Services = () => {
       </div>
 
       {/* cards */}
-      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-10">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-7xl mx-auto px-2">
         {services.map((service) => (
           <div
             key={service.id}
@@ -74,7 +74,7 @@ const Services = () => {
                 <h4 className="text-black font-extrabold font-roboto tracking-wider mb-3">
                   {service.title}
                 </h4>
-                <h4 className="text-black text-sm px-6 font-normal">
+                <h4 className="text-black text-sm px-6 font-normal text-justify">
                   {service.description}
                 </h4>
               </div>

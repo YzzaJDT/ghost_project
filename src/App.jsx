@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-  <div className='px-10 sm:px-5 lg:px-12'>
+ <div className="px-6 sm:px-6 lg:px-14">
           <Router>   
            <Home/>
         <Services />  
