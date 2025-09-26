@@ -6,10 +6,11 @@ const Home = () => {
 <div className='flex flex-row min-h-screen pt-24 pb-4'>  
   <Navbar/>
     <div
-      className="relative rounded-4xl flex flex-1 items-center sm:p-6 lg:p-6 bg-cover bg-center "
-      id="home"
-      style={{ backgroundImage: `url(${banner1})` }}
-    >
+        className="relative rounded-4xl overflow-hidden flex flex-1 items-center sm:p-6 lg:p-6 bg-cover bg-center"
+        id="home"
+        style={{ backgroundImage: `url(${banner1})` }}
+      >
+
       {/* Gradient overlay */}
       <div className="absolute inset-0 rounded-3xl bg-black opacity-60" ></div>
 
