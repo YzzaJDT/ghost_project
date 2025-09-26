@@ -35,7 +35,7 @@ const About = () => {
             <div className='md:w-4/5 mx-auto'>
               <h2 className='text-4xl text-neutralDGray font-roboto font-semibold md-4 md:w-4/5 text-center mb-8'>
               ROLLING HILLS TOWING</h2>
-              <p className='md:w-4/4 text-sm text-gray-800 mb-8 px-4 font-roboto text-justify'>At Rolling Hills Towing, our mission is simple: to provide fast, reliable, and affordable towing services to people in need — and to never leave anyone stranded on the road.
+              <p className='md:w-4/4 text-sm text-gray-800 mb-8 px-4 font-roboto text-justify'>At <span className='text-[#F0B609]'>Rolling Hills Towing</span> , our mission is simple: to provide fast, reliable, and affordable towing services to people in need — and to never leave anyone stranded on the road.
 For over 6 years, we’ve been serving drivers across Central Florida with a commitment to safety, professionalism, and care. <br/> <br/> What started as a small local operation has grown into a trusted towing company that assists with both residential and commercial auto towing services, always putting people first.
 Our vision is to become one of the most dependable towing providers throughout Central Florida and beyond, ensuring that every driver has someone they can call anytime, anywhere. <br/><br/>
 

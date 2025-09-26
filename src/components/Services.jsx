@@ -74,9 +74,9 @@ const Services = () => {
                 <h4 className="text-black font-extrabold font-roboto tracking-wider mb-3">
                   {service.title}
                 </h4>
-                <h4 className="text-black text-sm px-6 font-normal text-justify">
+                <h4 className="text-black text-sm px-6 font-normal text-justify ">
                   {service.description}
-                </h4>
+                </h4> 
               </div>
 
           </div>

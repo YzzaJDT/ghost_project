@@ -11,8 +11,8 @@ const Feedback = () => {
   };
 
   return (
-    <div className=" py-12 px-4 sm:px-6 lg:px-8 w-full" id="feedback">
-      <div className="w-full bg-white rounded-none md:rounded-2xl shadow-lg p-8 grid md:grid-cols-2 gap-8">
+    <div className="py-12 w-full" id="feedback">
+      <div className="w-full bg-white rounded-none md:rounded-2xl shadow-lg p-8 flex flex-col md:grid md:grid-cols-2 gap-8">
         {/* Left: Feedback Form */}
         <div className="w-full">
           <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">
@@ -55,16 +55,6 @@ const Feedback = () => {
                 className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               ></textarea>
             </div>
-
-            {/* Submit */}
-            <div className="text-center md:text-left">
-              <button
-                    type="submit"
-                    className="w-full md:w-auto bg-[#F9DC5C] text-gray-800 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition"
-                    >
-                    Submit Feedback
-                    </button>
-            </div>
           </form>
         </div>
 
@@ -90,6 +80,16 @@ const Feedback = () => {
               className="hidden"
             />
           </label>
+        </div>
+
+        {/* Submit Button - Responsive Position */}
+        <div className="mt-6 md:col-span-2 w-full text-center md:text-left">
+          <button
+            type="submit"
+            className="w-full md:w-auto bg-[#F9DC5C] text-gray-800 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition"
+          >
+            Submit Feedback
+          </button>
         </div>
       </div>
     </div>
