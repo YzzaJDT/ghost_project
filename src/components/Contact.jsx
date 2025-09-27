@@ -52,16 +52,16 @@ const Contact = () => {
                         </div>     
 
             {/* feedback */}
-            <div className='grid md:grid-cols-2 mt-8 px-5'>
+            <div className='grid md:grid-cols-2 mt-8'>
                     <div className='text-center'>
                    <img
                           src={qr}
                           alt="QR Code"
-                          className="mx-auto w-full max-w-[200px] "
+                          className="mx-auto w-full max-w-[250px] "
                         />
-                        <h4 className='font-roboto mt-2'>SCAN ME</h4>
+                        <h4 className='font-roboto mt-2 mr-2'>SCAN ME</h4>
                     </div>
-                 <div className="text-center">
+                 <div className="text-center px-3">
                       <h4 className="font-bold font-roboto">Review Us on Google</h4>
                       <p className="font-roboto mt-3">
                         Your opinion and feedback matters. Do leave us a review and tell us about your experience!
