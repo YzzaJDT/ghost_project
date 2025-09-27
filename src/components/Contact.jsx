@@ -59,7 +59,7 @@ const Contact = () => {
                           alt="QR Code"
                           className="mx-auto w-full max-w-[250px] "
                         />
-                        <h4 className='font-roboto mt-2 mr-2'>SCAN ME</h4>
+                        <h4 className='font-roboto mt-2 mr-2 font-bold'>SCAN ME</h4>
                     </div>
                  <div className="text-center px-3">
                       <h4 className="font-bold font-roboto">Review Us on Google</h4>
