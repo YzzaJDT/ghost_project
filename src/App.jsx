@@ -21,7 +21,7 @@ function App() {
         <Blog />
         <About />
         <Contact/>
-        <Feedback/>
+        {/* <Feedback/> */}
         <Footer/>
     </Router>
 </div>

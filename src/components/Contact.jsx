@@ -1,6 +1,7 @@
 import React from 'react'
 import { Footer } from 'flowbite-react';
-import logo from '../assets/icons/logo.png'
+import qr from '../assets/icons/qrIcon.png'
+import arrow from '../assets/icons/Vector.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -33,11 +34,11 @@ const Contact = () => {
                   <Footer.Link href="#" className='text-gray-800'> <span className='font-bold '>Outlook:</span><span> rollinghillstowing@outlook.com</span></Footer.Link>
                 </Footer.LinkGroup>
               </div>
-
+              
             </div>
             
               {/* Social Icons */}
-                        <div className="flex gap-6 mt-10 pl-4 text-2xl text-gray-800">
+                  <div className="flex gap-6 mt-10 pl-4 text-2xl text-gray-800">
                          
                           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 ">
                             <FaFacebook />
@@ -48,11 +49,33 @@ const Contact = () => {
                           <a href="https://yelp.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
                             <FaYelp />
                           </a>
+                        </div>     
+
+            {/* feedback */}
+            <div className='grid md:grid-cols-2 mt-8 px-5'>
+                    <div className='text-center'>
+                   <img
+                          src={qr}
+                          alt="QR Code"
+                          className="mx-auto w-full max-w-[200px] "
+                        />
+                        <h4 className='font-roboto mt-2'>SCAN ME</h4>
+                    </div>
+                 <div className="text-center">
+                      <h4 className="font-bold font-roboto">Review Us on Google</h4>
+                      <p className="font-roboto mt-3">
+                        Your opinion and feedback matters. Do leave us a review and tell us about your experience!
+                      </p>
+                       <div className="text-left -ml-3 mt-2">
+                          <img src={arrow} alt="Arrow" className="hidden sm:block w-14 " />
                         </div>
+                    </div>
+
+              </div> 
           </div>
 
           {/* Right section - Map */}
-          <div className="w-full md:h-[500px]">
+          <div className="w-full md:h-[550px]">
             <iframe
               title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701348.4813930871!2d-82.70201912345678!3d28.538336999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77af8f11b6f7f%3A0x9d13e8b9d59a3f07!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1691111111111!5m2!1sen!2sus"
