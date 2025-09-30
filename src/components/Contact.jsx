@@ -51,27 +51,7 @@ const Contact = () => {
                           </a>
                         </div>     
 
-            {/* feedback */}
-            <div className='grid md:grid-cols-2 mt-8'>
-                    <div className='text-center'>
-                   <img
-                          src={qr}
-                          alt="QR Code"
-                          className="mx-auto w-full max-w-[250px] "
-                        />
-                        <h4 className='font-roboto mt-2 mr-2 font-bold'>SCAN ME</h4>
-                    </div>
-                 <div className="text-center px-3">
-                      <h4 className="font-bold font-roboto">Review Us on Google</h4>
-                      <p className="font-roboto mt-3">
-                        Your opinion and feedback matters. Do leave us a review and tell us about your experience!
-                      </p>
-                       <div className="text-left -ml-3 mt-2">
-                          <img src={arrow} alt="Arrow" className="hidden sm:block w-14 " />
-                        </div>
-                    </div>
-
-              </div> 
+          
           </div>
 
           {/* Right section - Map */}
