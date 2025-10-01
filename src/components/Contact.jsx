@@ -51,7 +51,7 @@ const Contact = () => {
                           </a>
                         </div>     
 
-          
+    
           </div>
 
           {/* Right section - Map */}
