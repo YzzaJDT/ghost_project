@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react'
-import aboutImg from '../assets/icons/DUMMY.jpg'
+import aboutImg from '../assets/icons/ralph.jpg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
