@@ -34,7 +34,7 @@ const Navbar = () => {
             />
           <div className="flex flex-col">
               <span className="text-base sm:text-lg md:text-xl font-roboto font-bold text-black">
-                ROLLING HILLS TOWING atay
+                ROLLING HILLS TOWING
               </span>
               <span className="hidden sm:inline text-[10px] sm:text-xs md:text-sm font-roboto font-semibold text-black italic">
                 Ready to assist you with the best towing business
