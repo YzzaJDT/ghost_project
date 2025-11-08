@@ -175,7 +175,8 @@ return (
         <div className="mt-6 w-full text-center md:text-left">
           <button
             type="submit"
-            className="w-full md:w-auto bg-[#F9DC5C] text-gray-800 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition"
+            className="w-full md:w-auto bg-yellow-400 text-gray-800 font-medium px-6 py-3 rounded-lg shadow-md
+             hover:bg-[#F9DC5C]  focus:outline-none focus:ring-2  focus:ring-offset-2 transition"
           >
             Submit Feedback
           </button>

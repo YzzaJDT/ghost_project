@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import  "aos/dist/aos.css";
 import Feedback from './components/Feedback';
-import FloatingIcon from './components/FloatingIcon';
+// import FloatingIcon from './components/FloatingIcon';
 
 
 
@@ -27,7 +27,7 @@ function App() {
         <Contact/>
         <Feedback/>
         <Footer/>
-        <FloatingIcon/>
+        {/* <FloatingIcon/> */}
     </Router>
 
 </div>

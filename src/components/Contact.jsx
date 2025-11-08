@@ -4,9 +4,9 @@ import qr from '../assets/icons/qrIcon.png'
 import arrow from '../assets/icons/Vector.png'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
-import { FaFacebook, FaInstagram, FaYelp } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa"; 
+// import { FaFacebook, FaInstagram, FaYelp } from "react-icons/fa";
+// import { SiGmail } from "react-icons/si";
 
 const Contact = () => {
   return (
@@ -25,20 +25,34 @@ const Contact = () => {
               </a>
             </div>
 
-            <div className="gap-8 px-4">
-              <div>
-                <Footer.Title title="Contact Info"  className='font-semibold text-gray-800'/>
-                <Footer.LinkGroup col>
-                  <Footer.Link href="#" className='text-gray-800'> <span className='font-bold '>Address:</span> <span>29317 CR 561 Tavares, Fl 32778</span></Footer.Link>
-                  <Footer.Link href="#" className='text-gray-800'> <span className='font-bold '>Phone:</span><span> 352-456-8294</span></Footer.Link>
-                  <Footer.Link href="#" className='text-gray-800'> <span className='font-bold '>Outlook:</span><span> rollinghillstowing@outlook.com</span></Footer.Link>
-                </Footer.LinkGroup>
-              </div>
-              
-            </div>
+           <div className="gap-8 px-4">
+  <div>
+    {/* Footer Title */}
+    <Footer.Title 
+      title="Contact Info"  
+      className="font-semibold text-gray-800 text-lg md:text-xl"
+    />
+
+    <Footer.LinkGroup col>
+      {/* Address */}
+      <Footer.Link href="#" className="text-gray-800 text-sm md:text-base">
+        <span className="font-bold text-sm md:text-base">Address:</span> 
+        <span className="text-sm md:text-base"> 29317 CR 561 Tavares, FL 32778</span>
+      </Footer.Link>
+
+      {/* Email */}
+      <Footer.Link href="#" className="text-gray-800 text-sm md:text-base">
+        <span className="font-bold text-sm md:text-base">Outlook:</span>
+        <span className="text-sm md:text-base"> rollinghillstowing@outlook.com</span>
+      </Footer.Link>
+    </Footer.LinkGroup>
+  </div>
+</div>
+
             
               {/* Social Icons */}
-                  <div className="flex gap-6 mt-10 pl-4 text-2xl text-gray-800">
+                  {/* <div className="flex gap-6 mt-10 pl-4 text-2xl text-gray-800">
+                    
                          
                           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 ">
                             <FaFacebook />
@@ -49,13 +63,23 @@ const Contact = () => {
                           <a href="https://yelp.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-600">
                             <FaYelp />
                           </a>
-                        </div>     
+                        </div>     */}
+                 
+<a
+  href="tel:+639123456789"
+  className="group mt-10 flex items-center bg-gray-900 text-white font-semibold px-6 py-3 rounded-full 
+             hover:bg-yellow-400 transition-all w-full max-w-xs justify-center mx-auto sm:ml-4"
+>
+  <FaPhoneAlt className="text-yellow-400 group-hover:text-white transition-colors duration-300" />
+  +1 (352) 717-8416
+</a>
+
 
     
           </div>
 
           {/* Right section - Map */}
-          <div className="w-full md:h-[400px]">
+          <div className="w-full md:h-[400px] px-2">
             <iframe
               title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701348.4813930871!2d-82.70201912345678!3d28.538336999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77af8f11b6f7f%3A0x9d13e8b9d59a3f07!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1691111111111!5m2!1sen!2sus"
