@@ -92,10 +92,10 @@ const Home = () => {
           smooth={true}
           offset={-100} // adjust if navbar is fixed
           duration={500}
-          className="group mt-5 gap-3 flex items-center bg-gray-900 text-white font-semibold px-4 py-3 rounded-full 
-                    hover:bg-yellow-400 transition-all w-full max-w-xs md:max-w-[250px] justify-center cursor-pointer"
+          className="group mt-5 gap-3 flex items-center bg-yellow-400 text-white font-semibold px-4 py-3 rounded-full 
+                    hover:bg-yellow-300 transition-all w-full max-w-xs md:max-w-[250px] justify-center cursor-pointer"
         >
-          <FaPhoneAlt className="text-yellow-400 group-hover:text-white transition-colors duration-300" />
+          <FaPhoneAlt className="text-white group-hover:text-white transition-colors duration-300" />
           Call us now
         </Link>
 
